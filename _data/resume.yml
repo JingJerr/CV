@@ -86,7 +86,7 @@ main: #简历主要内容，
 - type: projects
   name: 项目经验
   content:
-  - title: 保互通
+  - title: 保互通3.0
     duration: 2021年3月 - 至今
     detail: 我在该项目负责搭建cordova环境，利用cordova与android原生进行交互，利用cordova与h5前端交互。在该项目中，cordova环境以及gradle环境搭建迅速且稳定，从零学习cordova迅速上手生产。途中也遇到了cordova与双端交互时的“穿壳”问题，比如前端微信支付调起时需要cordova“穿墙”，还有android11裁剪照片保存到源空间的图片存储适配问题cordova的官方并没有给解决方法，我是使用原生来做的存储的适配然后在和cordova的相机插件进行交互。最终解决了这个遗留了好几个版本的问题。
     sub: android原生开发
