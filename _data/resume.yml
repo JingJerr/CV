@@ -1,106 +1,145 @@
 # 数据格式可以为 yaml(文件以.yml结尾) 或者json(文件以.json结尾)
 # 如果YAML格式的数据请先检查格式是否有误，可选检查工具 http://www.yamllint.com
 
-title: "简历标题"
+title: "个人简历"
 lang: "zh" #语言设置 zh表示中文 en 表示英语
-name: "你的名字"
-jobtitle: "求职意向" #可空不显示
-photo: "assets/img/photo.jpg" #照片可空，不显示
+name: "刘博园"
+jobtitle: "Android开发工程师" #可空不显示
+photo: "assets/img/liuphoto.jpg" #照片可空，不显示
 
 #联系方式
 contact: #联系方式连接等3~5行
-- text: "youremail@example.com" #文本内容
-  href: 'mailto:youremail@example.com' #链接，无链接则空  
+- text: "542567635@qq.com" #文本内容
+  href: 'mailto:542567635@qq.com' #链接，无链接则空  
   icon: 'icons/email.svg' #图标 svg文件
-- text: "1234567890"
-  href: 'tel:1234567890'
+- text: "15232180127"
+  href: 'tel:15232180127'
   icon: 'icons/phone.svg'
-- text: "your-website.com"
-  href: 'http://your-website.com'
-  icon: 'icons/web.svg'
-- text: "GitHubID"
-  href: 'https://github.com/NewFuture'
+- text: "liuboyuan"
+  href: 'https://github.com/JingJerr'
   icon: "icons/github.svg"
   attr: 'target="_blank"' #新标签页打开
-  # - text: "地址"
-  #   icon: "icons/location.svg"
+- text: "wiseyue"
+  href: 'https://blog.csdn.net/wiseyue?spm=1000.2115.3001.5343'
+  icon: "icons/csdn.svg"
+  attr: 'target="_blank"' #新标签页打开
 
 #main下面是主体内容，类别条数不限
 main: #简历主要内容，
 - type: education #类别为ID
   name: 教育 #显示名称，空则使用type
   content: #内容基本格式 标题-副标题-日期-详细内容 (都允许空)
-  - title: 大学名称
-    duration: "2011年x月 - 2015年"
-    sub: 地点或学历
-    detail: 专业或者简短说明
-  - title: Your University
-    duration: Aug 2007 - Jun 2011
-    sub: Ut enim ad minim veniam
-    detail: Master Bachelor of Computer Science & Technology.
+  - title: 河北师范大学
+    duration: "2014年9月 - 2018年6月"
+    sub: 河北省石家庄
+    detail: 软件工程系(Android开发与移动智能设备方向)
 
-- type: skills
+- type: 教育背景
   # name: "技能"
   content:
-  - title: 编程语言
+  - title: 主修课程
     items: #itmems 可以小块的方式显示
-    - 汉语
-    - 语言2
-    - 语言3
-  - title: Skill Group
-    summary: Consectetur, Adipiscing, Elit
+    - Android开发
+    - Java
+    - C/C++
+    - 数据结构
+    - 操作系统
+    - 数据库
+  - title: 专业技能
+    summary: Android四大组件的使用, MateriaDesign风格的控件及视图使用,各种View及动画的的自定义使用;Handler、AsyncTask、SQLite、Socket的使用,http、tcp/ip网络通信协议的使用,MVP基本开发架构的使用;Java中泛型、注解等高级开发的使用以及多种实用算法、异常处理、多线程、IO流操作、网络编程、OOP思想、常用设计模式的使用;熟练使用Retrofit、Rxjava、Glide、Lottie等开源框架，了解其设计原理;熟悉kotlin，对web开发、php开发语言有一定的了解。
 
 - type: experience
-  name: 经验
+  name: 工作经验
   content:
-  - title: 职位
-    sub: 某某公司
-    duration: "xxxx年xx月 - yyyy年yy月"
+  - title: 应用研发工程师
+    sub: 北京帕尔加特科技有限公司
+    duration: "2018年11月1日 - 2019年10月12日"
     tags:
-    - 标签
-    summary: 职务或者工作总结(自动折叠)
-    detail: 同时包含 summary和detail在Chrome，Safari(包括IOS)，Android和新版Firefox等会自动折叠，不支持折叠的浏览器和展开后表现一致
-    # open: open
+    - 手机工具清理类产品
+    - 健身类产品
+    - 质量保障
+    - 量产
+    - MaterialDesign控件及自定义View的UI
+    summary: 负责手机工具类产品的研发与维护版本迭代，设计、研发、维护健身类应用
+    detail: 海外广告变现项目主要依托于海外facebook与admob广告变现，实现与广告SDK的对接，参与数据库存储数据结构的设计，UI方面的设计及性能优化，对lottie动画、EventBus、Multidex、Calender、MPChart等框架以及库的熟练使用，对mvp架构的熟练使用。
+    open: open
     #可以设置open默认展开
-  - title: Job Title
-    sub: Your 2nd, Inc.  
-    duration: Apr 2013 - Mar 2016
-    tags: 
-    - tagname
-    summary: Summary your job or work. (Collapse)
-    detail: Details can be collapsed in Chrome Safari, Firefox, Opera and so on. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-- type: projects
-  name: Projects
+    
+- type: experience
+  name: 工作经验
   content:
-  - title: 项目名称
-    duration: xxxx年xx月 - yyyy年yy月
-    detail: 项目和工作介绍，项目总结.
-    sub: 维护者
-  - title: Project Name
-    summary: Projects' introduction or summary
-    detail:
-      md: _data/demo.md
-    sub: Creator and maintainer.
+  - title: 应用研发工程师
+    sub: 北京中科软科技有限公司
+    duration: "2020年1月13日 - 至今"
+    tags:
+    - 中科软双录系统
+    - 中韩人寿
+    - 北大方正人寿
+    - 阳光保险
+    - 天安人寿
+    - 语音播报TTS
+    - 双音视频流（摄像头+录屏）混合编码解码
+    - 保互通3.0（用cordova混编开发）
+    summary: 负责手机双录系统app产品的研发与多期需求开发版本迭代；负责双录app新版本的设计以及开发
+    detail: 1.完成多项项目中的技术难关突破，比如摄像头采集视频流和录屏流混合编码时录屏流视频长款缩小；视频音频双录过程中针各种型号手机出现视频黑白屏问题；针对录制过程中二维码识别通过率低进行了识别优化等等。2.在工期内保证各项项目的稳定上线以及版本迭代
+    open: open
+    #可以设置open默认展开
+- type: projects
+  name: 项目经验
+  content:
+  - title: 保互通
+    duration: 2021年3月 - 至今
+    detail: 我在该项目负责搭建cordova环境，利用cordova与android原生进行交互，利用cordova与h5前端交互。在该项目中，cordova环境以及gradle环境搭建迅速且稳定，从零学习cordova迅速上手生产。途中也遇到了cordova与双端交互时的“穿壳”问题，比如前端微信支付调起时需要cordova“穿墙”，还有android11裁剪照片保存到源空间的图片存储适配问题cordova的官方并没有给解决方法，我是使用原生来做的存储的适配然后在和cordova的相机插件进行交互。最终解决了这个遗留了好几个版本的问题。
+    sub: android原生开发
+  - title: 中科软双录系统阳光保险
+    duration: 2020年4月 - 至今
+    detail: 1. 针对保险用户安全考虑，推出了保险行业的双录系统（本地现场双录模式）2.通过把代理人以及保险投被保人双方在签订保险合同时的各种场景来进行音视频实时本地录制，之后将录制好的视频上传到服务器留证3.由于业务变更，双录系统录制改为摄像头流以及录屏流双流混合解码 4. 使用retrofit+RxJava对网络请求进行封装，使用glide加载图片 5. 自定义webview将pdf以及图片在录屏或者摄像头采集中显示
+    sub: 移动端开发
+  - title: 中科软双录系统天安人寿
+    duration: 2020年9月 - 至今
+    detail: 1. 针对保险用户安全考虑，推出了保险行业的双录系统（本地现场双录模式）2. 通过把代理人以及保险投被保人双方在签订保险合同时的各种场景来进行音视频实时本地录制，之后将录制好的视频上传到服务器留证3.由于业务变更，双录系统录制改为摄像头流以及录屏流双流混合解码
+    sub: 移动端开发
+  - title: 中科软双录系统中韩人寿与北大方正人寿app重构换新
+    duration: 2020年9月 - 至今
+    detail: 1. 为了优化app代码结构以及app性能，将原来的项目全部进行100%重构2. ui更换为android更为流畅以及质感的metrailDesign设计风格3. TTS语音播报改为原生语音播报4. 现场双录和带有文件投屏的三分屏录制以及远程双录界面及功能全部换新5. 由于疫情原因，客户双方不能到达现场，后推出远程双录模式，运用腾讯实时音视频sdk进行远程双方签订保险合同时个各种场景留证，将录制的视频上传到服务器
+    sub: 移动端开发
+  - title: 中科软双录系统中韩人寿
+    duration: 2020年1月 - 2020年3月
+    detail: 1. 针对保险用户安全考虑，推出了保险行业的双录系统（本地现场双录模式）2. 通过把代理人以及保险投被保人双方在签订保险合同时的各种场景来进行音视频实时本地录制，之后将录制好的视频上传到服务器留证
+    sub: 移动端开发
+  - title: “掌上校园”App开发
+    duration: 2017年9月 - 2018年5月
+    detail: 1)基于Material Design设计的UI； 2)基于 OkHttp、Ajax、Jsoup框架实现校园网络数据获取及解析； 3)基于百度地图API实现的校园地图导航等。 
+    sub: 移动端开发
+  - title: “食趣”App开发
+    duration: 2016年10月 - 2017年1月
+    detail: 1)App底层设计模式讨论；2)基于Material Design设计的" 我的"页面与逻辑；3)基于JFnal框架的后台数据库设计； 4)基于OkHttp、Gson框架的数据库数据获取及解析； 5) 基于Glide框架的头像缩略图裁剪及上传。  
+    sub: 移动端开发
+  - title: “汽车销售系统”App开发
+    duration: 2016年9月 - 2017年1月
+    detail: 1）基础的ui界面设计以及后续的逻辑代码实现；2) 通过Handler+HttpURLConnection获取后台数据库信息以及Xml格式解析将数据显示到ListView中 
+    sub: 移动端开发
+  - title: 简单聊天系统
+    duration: 2016年3月 - 2016年6月
+    detail: 1)通过 io 流操作：InputStream、 OutputStream等实现聊天内容的读写；2)通过多线程以及AsyncTask异步任务实现群聊以及同时和多个人聊天；3)基于 socket通信的网络编程实现； 4)基于ViewPager实现底部导航栏。 
+    sub: 客户端与服务器端开发者
    #可继续添加更多内容
 
 #others 其他简略内容(列表)
 others: #其他列表显示
 - type: others #ID可以为空
-  name: '其他'
+  name: '证书奖项'
   content: #选择需要的格式
-  - 单行文字
-  - title: "加粗:"
-    text: "列表项二"
-  - title: "兴趣:"
-    items: #单行列表
-    - 睡觉
-    - 吃饭
-    - coding
-  - title: 列表
-    list:
-    - 第一项
-    - 第二项
+  - 获得专业二等奖学金
+  - 获得院三好学生、无人监考诚信个人称号 
+  - 获得国家优秀志愿者称号 
+  - 获得2016寒假社会实践团体三等奖 
+  
+  others: #其他列表显示
+- type: others #ID可以为空
+  name: '自我评价'
+  content: #选择需要的格式
+  - Github爱好者，对互联网保持高度的敏感性和关注度，曾任院青协办公室部长。本人有很强的产品规划、需求分析、交互设计能力，能独立承担 App项目的管控工作。曾自学photoshop与Flash二维动画制作，善于学习，喜欢钻研。品质优良，吃苦耐劳。  
 #- type: 
 #  name: '其他'
 #  content: #选择需要的格式
@@ -113,8 +152,8 @@ footer: #脚注多组
   screen:
   - text: "简历脚注"
   #   href: '/'
-  - text: "Made with &hearts; by NewFuture"
-    href: "https://github.com/NewFuture/CV/"
+  - text: "Made with &hearts; by Boyuan Liu"
+    href: "https://github.com/JingJerr/CVBarry/"
 
 #页面额外js脚本，如xx统计
 scripts:
