@@ -20,7 +20,7 @@ contact: #联系方式连接等3~5行
   attr: 'target="_blank"' #新标签页打开
 - text: "wiseyue"
   href: 'https://blog.csdn.net/wiseyue?spm=1000.2115.3001.5343'
-  icon: "icons/csdn.svg"
+  icon: "icons/web.svg"
   attr: 'target="_blank"' #新标签页打开
 
 #main下面是主体内容，类别条数不限
