@@ -1,5 +1,4 @@
-# 数据格式可以为 yaml(文件以.yml结尾)
-# 如果YAML格式的数据请先检查格式是否有误，可选检查工具 http://www.yamllint.com
+#  http://www.yamllint.com
 
 title: "个人简历"
 lang: "zh" #语言设置 zh表示中文 en 表示英语
@@ -140,11 +139,7 @@ others: #其他列表显示
   name: '自我评价'
   content: #选择需要的格式
   - Github爱好者，对互联网保持高度的敏感性和关注度，曾任院青协办公室部长。本人有很强的产品规划、需求分析、交互设计能力，能独立承担 App项目的管控工作。曾自学photoshop与Flash二维动画制作，善于学习，喜欢钻研。品质优良，吃苦耐劳。  
-#- type: 
-#  name: '其他'
-#  content: #选择需要的格式
-#  - 单行文字
-#  - 如果有可以继续添加
+
 
 #footer 脚注，打印版和web版不同不显示    
 footer: #脚注多组
