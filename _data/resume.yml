@@ -83,7 +83,7 @@ main: #简历主要内容，
     detail: 1.完成多项项目中的技术难关突破，比如摄像头采集视频流和录屏流混合编码时录屏流视频长款缩小；视频音频双录过程中针各种型号手机出现视频黑白屏问题；针对录制过程中二维码识别通过率低进行了识别优化等等。2.在工期内保证各项项目的稳定上线以及版本迭代
     open: open
     #可以设置open默认展开
-    - type: experience
+ - type: experience
   name: 工作经验
   content:
   - title: Android开发工程师
@@ -98,6 +98,7 @@ main: #简历主要内容，
     detail: 1.使用kotlin+jetpack+mvvm开发 2.使用retrofit+协程搭建网络请求 2.组件化及模块化开发3.自定义搜索EditText，一键清除EditText等等一系列view 4.对TIMSDK进行深度二次开发。
     open: open
     #可以设置open默认展开
+    
 - type: projects
   name: 项目经验
   content:
