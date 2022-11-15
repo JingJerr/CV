@@ -46,13 +46,21 @@ main: #简历主要内容，
     - 数据库
   - title: 专业技能
     summary: 1)拥有丰富的面向对象分析设计能力，熟悉常用的设计模式及反射原理，多次采用设计模式重构app代码
+    
              2)熟练掌握Handler原理，对线程通信有深入的理解
+             
              3)熟悉UI，掌握自定义View，拥有利用事件分发机制解决UI交互及冲突的能力
+             
              4)拥有阅读Framework层源码来解决实际问题的经验，对AMS，ATMS，WMS以及Binder跨进程通讯有较深入地理解
+             
              5)熟练掌握OKHttp、Retrofit、RxJava、Glide等常用三方库，熟悉框架底层原理
+             
              6)熟练掌握Kotlin语言开发，掌握kotlin中委托机制、高阶函数、协程、Koin注入等
+             
              7)对MVP/MVVM架构搭建项目的实际开发经验，对MVI架构有一定的了解
+             
              8)对模块化、组件化开发有实际研发经验
+             
              9)对compose、flutter有一定的了解
 - type: experience
   name: 工作经历
