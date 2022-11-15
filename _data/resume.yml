@@ -128,7 +128,7 @@ main: #简历主要内容，
                 网络模块：基于OKHttp/Retrofit/RxJava三个框架进行了二次封装，支持更改BaseUrl，添加Header等功能
                 音视频模块：基于SurfaceView进行摄像头录制和屏幕录制，再将摄像头录制流和屏幕录制流合并到同一个流，双条轨道并入同一轨道，过程中涉及到远程签名，使用WebSocket长连接完成
     sub: 移动端开发
-  - title: app清理工具、健身类产品
+  - title: 手机清理工具、健身类产品
     duration: 2018年11月1日 - 2019年12月30日
     detail: 使用技术：Java+MVP+ViewPager/Fragment+Glide+Lottie+EventBus+Calender+MPChart
             职责描述：
