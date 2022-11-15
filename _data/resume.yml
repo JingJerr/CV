@@ -3,7 +3,7 @@
 title: "个人简历"
 lang: "zh" #语言设置 zh表示中文 en 表示英语
 name: "刘博园"
-jobtitle: "Android开发工程师" #可空不显示
+jobtitle: "Android高级工程师" #可空不显示
 photo: "assets/img/liuphoto.jpg" #照片可空，不显示
 
 #联系方式
@@ -45,85 +45,91 @@ main: #简历主要内容，
     - 操作系统
     - 数据库
   - title: 专业技能
-    summary: Kotlin的使用,Android四大组件的使用, MateriaDesign风格的控件及视图使用,各种View及动画的的自定义使用;Handler、AsyncTask、SQLite、Socket的使用,http、tcp/ip网络通信协议的使用,MVVM开发架构的使用;Java中泛型、注解等高级开发的使用以及多种实用算法、异常处理、多线程、IO流操作、网络编程、OOP思想、常用设计模式的使用;熟练使用Retrofit、Rxjava、Glide、Lottie、Coroutine等开源框架，了解其设计原理;对web开发、php开发语言有一定的了解。
+    summary: 1)拥有丰富的面向对象分析设计能力，熟悉常用的设计模式及反射原理，多次采用设计模式重构app代码
+             2)熟练掌握Hnadler原理，对线程通信有深入地理解
+             3)熟悉UI，掌握自定义View，拥有利用事件分发机制解决UI交互及冲突的能力
+             4)拥有阅读Framwork层源码来解决实际问题的经验，对AMS，ATMS，WMS以及Binder跨进程通讯有较深入地理解
+             5)熟练掌握OKHttp、Retrofit、RxJava、Glide等常用三方库，熟悉框架底层原理
+             6)熟练掌握Kotlin语言开发，掌握kotlin中委托机制、高阶函数、协程、Koin注入等
+             7)对MVP/MVVM架构搭建项目的实际开发经验，对MVI架构有一定的了解
+             8)对模块化、组件化开发有实际研发经验
+             9)对compose、flutter有一定的了解
 - type: experience
-  name: 工作经验
+  name: 工作经历
   content:
-  - title: Android开发工程师
+  - title: Android高级工程师
+    sub: 北京中科软科技有限公司
+    duration: "2021年12月1日 - 至今"
+  - title: Android高级工程师
     sub: 北京安迅达盛科技有限公司
-    duration: "2021年6月7日 - 至今"
-    tags:
-    - 医疗平台
-    - 互联网医院
-    - 在线诊疗
-    - 看病信息保存
-    summary: 负责安e医生app端的开发与维护
-    detail: 1.使用kotlin+jetpack+mvvm开发 2.使用retrofit+协程搭建网络请求 2.组件化及模块化开发3.自定义搜索EditText，一键清除EditText等等一系列view 4.对TIMSDK进行深度二次开发。
-    open: open
-    #可以设置open默认展开
-    
-- type: experience
-  name: 工作经验
-  content:
-  - title: 应用研发工程师
+    duration: "2021年6月1日 - 2021年11月30日"
+  - title: Android中级工程师
     sub: 北京中科软科技有限公司
     duration: "2020年1月13日 - 2021年5月30日"
-    tags:
-    - 中科软双录系统
-    - 中韩人寿
-    - 北大方正人寿
-    - 阳光保险
-    - 天安人寿
-    - 语音播报TTS
-    - 双音视频流（摄像头+录屏）混合编码解码
-    - 保互通3.0（用cordova混编开发）
-    summary: 负责手机双录系统app产品的研发与多期需求开发版本迭代；负责双录app新版本的设计以及开发
-    detail: 1.完成多项项目中的技术难关突破，比如摄像头采集视频流和录屏流混合编码时录屏流视频长款缩小；视频音频双录过程中针各种型号手机出现视频黑白屏问题；针对录制过程中二维码识别通过率低进行了识别优化等等。2.在工期内保证各项项目的稳定上线以及版本迭代
-    open: open
-    #可以设置open默认展开
-    
-- type: experience
-  name: 工作经验
-  content:
-  - title: 应用研发工程师
+  - title: Android初级工程师
     sub: 北京帕尔加特科技有限公司
-    duration: "2018年11月1日 - 2019年10月12日"
-    tags:
-    - 手机工具清理类产品
-    - 健身类产品
-    - 质量保障
-    - 量产
-    - MaterialDesign控件及自定义View的UI
-    summary: 负责手机工具类产品的研发与维护版本迭代，设计、研发、维护健身类应用
-    detail: 海外广告变现项目主要依托于海外facebook与admob广告变现，实现与广告SDK的对接，参与数据库存储数据结构的设计，UI方面的设计及性能优化，对lottie动画、EventBus、Multidex、Calender、MPChart等框架以及库的熟练使用，对mvp架构的熟练使用。
-    open: open
-    #可以设置open默认展开
+    duration: "2018年11月1日 - 2019年12月30日"
 - type: projects
   name: 项目经验
   content:
-  - title: 安e医生
-    duration: 2021年6月 -至今
-    detail: 负责安e医生app端的开发与维护，主要功能有在线诊疗以及健康档案管理，主要使用kotlin+jetpack+mvvm开发、retrofit+协程搭建网络请求、组件化及模块化开发、自定义view、对TIMSDK进行深度二次开发等等技术。
-    sub: android原生开发
+  - title: 保互通3.0app重构
+    duration: 2021年12月1日 - 至今
+    detail: 使用技术：Kotlin+JetPack/MVVM+ViewPage2/Fragment+Glide+Retrofit/Okhttp4+协程
+            职责描述：
+                1.负责项目架构搭建和架构质量优化
+                2.对应用启动、流畅度、APK瘦身等方面调优
+                3.日常开发及维护
+            技术描述：
+                MVVM架构搭建：客户端采用了View层与ViewModel/LiveData层的分离以及双向绑定，在ViewModel层与Model层中加入了Repository仓库层进行数据操作
+                UI绘制：主页面采用了ViewPager+Fragment嵌套方式开发，完全进行lazyLoad，通过LifeCycle对Fragment生命周期的感知以及根据页面可见性控制数据的加载时机，根据数据动态添加view的展示，提升性能
+                网络模块：基于OKHttp/Retrofit/协程三个框架进行了二次封装，形成独立的HttpModule，为应用层提供接口：域名切换、日志/Header/SSL证书配置等。
+    sub: Android高级工程师
+  - title: E+健康
+    duration: 2021年6月1日 - 2021年11月30日
+    detail: 使用技术：Kotlin+JetPack/MVVM+Glide+Retrofit/Okhttp3+RxJava+ARoute+Koin+RTCSDK二次开发+组件化
+            职责描述：
+                1.负责项目架构搭建和架构质量优化
+                2.对应用启动、流畅度、APK瘦身等方面调优
+                3.日常开发及维护
+            技术描述：
+                MVVM架构搭建：客户端采用了View层与ViewModel/LiveData层的分离以及双向绑定，在ViewModel层与Model层中加入了Repository仓库层进行数据操作
+                UI绘制：主页面采用了ViewPager+Fragment嵌套方式开发，完全进行lazyLoad，通过LifeCycle对Fragment生命周期的感知以及根据页面可见性控制数据的加载时机，根据数据动态添加view的展示，提升性能
+                网络模块：基于OKHttp/Retrofit/RxJava三个框架进行了二次封装，形成独立的HttpModule，为应用层提供接口：域名切换、日志/Header/SSL证书配置等。
+                IM模块：根据产品需求对腾讯IM-RTC音视频通话SDK作为一个Module导入项目中进行二次开发
+                模块化：根据产品功能划分将项目分为Base、Consult、Release、Home、Http、PatientHealthFile六个模块开进行开发以及单元测试，模块之间通过ARoute进行通讯
+    sub: Android高级工程师
   - title: 保互通3.0
     duration: 2021年3月 - 2021年5月30日
-    detail: 我在该项目负责搭建cordova环境，利用cordova与android原生进行交互，利用cordova与h5前端交互。在该项目中，cordova环境以及gradle环境搭建迅速且稳定，从零学习cordova迅速上手生产。途中也遇到了cordova与双端交互时的“穿壳”问题，比如前端微信支付调起时需要cordova“穿墙”，还有android11裁剪照片保存到源空间的图片存储适配问题cordova的官方并没有给解决方法，我是使用原生来做的存储的适配然后在和cordova的相机插件进行交互。最终解决了这个遗留了好几个版本的问题。
-    sub: android原生开发
-  - title: 中科软双录系统天安人寿/中科软双录系统阳光保险/中科软双录系统中韩人寿
-    duration: 2020年4月 - 2021年5月30日
-    detail: 1. 针对保险用户安全考虑，推出了保险行业的双录系统（本地现场双录模式）2. 通过把代理人以及保险投被保人双方在签订保险合同时的各种场景来进行音视频实时本地录制，之后将录制好的视频上传到服务器留证3.由于业务变更，双录系统录制改为摄像头流以及录屏流双流混合解码
+    detail: 使用技术：Java+React+cordova+Glide+Retrofit/Okhttp3+RxJava+Andrordx+Gradle配置
+            职责描述：
+                1.日常开发及维护
+            技术描述：
+                主架构：Cordova+React：通过搭建cordova环境，利用cordova与android原生进行交互，利用cordova与h5前端交互。
+                其他技术：升级androidx插件，升级Gradle编译版本，搭建cordova环境以及gradle环境迅速且稳定，从零学习cordova迅速上手生产。途中也遇到了cordova与双端交互时的“穿壳”问题，比如前端微信支付调起时需要cordova“穿墙”，还有android11裁剪照片保存到源空间的图片存储适配问题cordova的官方并没有给解决方法，我是使用原生来做的存储的适配然后在和cordova的相机插件进行交互。
+    sub: android中级工程师
+  - title: 中科软双录系统
+    duration: 2020年1月13日 - 2021年5月30日
+    detail: 使用技术：Java+MVP+ViewPager2/Fragment+Glide+Retrofit/Okhttp3+RxJava+Camera音视频录制+屏幕录制+RTC+WebSocket
+            职责描述：
+                1.负责项目架构搭建和架构质量优化
+                2.对应用启动、流畅度、APK瘦身等方面调优
+                3.日常开发及维护
+            技术描述：
+                MVP架构搭建：客户端采用了面向接口编程降View层与Model层完全分离，使得业务代码和逻辑代码解耦
+                UI绘制：主页面采用了ViewPager+Fragment嵌套方式开发，完全进行lazyLoad，通过LifeCycle对Fragment生命周期的感知以及根据页面可见性控制数据的加载时机，根据数据动态添加view的展示，提升性能
+                网络模块：基于OKHttp/Retrofit/RxJava三个框架进行了二次封装，支持更改BaseUrl，添加Header等功能
+                音视频模块：基于SurfaceView进行摄像头录制和屏幕录制，再将摄像头录制流和屏幕录制流合并到同一个流，双条轨道并入同一轨道，过程中涉及到远程签名，使用WebSocket长连接完成
     sub: 移动端开发
-  - title: 中科软双录系统中韩人寿与北大方正人寿app重构换新
-    duration: 2020年9月 - 2021年5月30日
-    detail: 1. 为了优化app代码结构以及app性能，将原来的项目全部进行100%重构2. ui更换为android更为流畅以及质感的metrailDesign设计风格3. TTS语音播报改为原生语音播报4. 现场双录和带有文件投屏的三分屏录制以及远程双录界面及功能全部换新5. 由于疫情原因，客户双方不能到达现场，后推出远程双录模式，运用腾讯实时音视频sdk进行远程双方签订保险合同时个各种场景留证，将录制的视频上传到服务器
-    sub: 移动端开发
-  - title: “掌上校园”App开发
-    duration: 2017年9月 - 2018年5月
-    detail: 1)基于Material Design设计的UI； 2)基于 OkHttp、Ajax、Jsoup框架实现校园网络数据获取及解析； 3)基于百度地图API实现的校园地图导航等。 
-    sub: 移动端开发
-  - title: “食趣”App开发
-    duration: 2016年10月 - 2017年1月
-    detail: 1)App底层设计模式讨论；2)基于Material Design设计的" 我的"页面与逻辑；3)基于JFnal框架的后台数据库设计； 4)基于OkHttp、Gson框架的数据库数据获取及解析； 5) 基于Glide框架的头像缩略图裁剪及上传。  
+  - title: app清理工具、健身类产品
+    duration: 2018年11月1日 - 2019年12月30日
+    detail: 使用技术：Java+MVP+ViewPager/Fragment+Glide+Lottie+EventBus+Calender+MPChart
+            职责描述：
+                1.负责项目MVP架构搭建
+                3.日常开发及维护
+            技术描述：
+                MVP架构搭建：客户端采用了面向接口编程降View层与Model层完全分离，使得业务代码和逻辑代码解耦
+                UI绘制：主页面采用了ViewPager+Fragment嵌套方式开发
+                其他技术：使用Lottie加载asset文件夹中的json或者image文件，使用MPChart绘制BMI图表，在Calender中添加日程等等
     sub: 移动端开发
    #可继续添加更多内容
 
@@ -141,7 +147,7 @@ others: #其他列表显示
 - type: others #ID可以为空
   name: '自我评价'
   content: #选择需要的格式
-  - Github爱好者，对互联网保持高度的敏感性和关注度，曾任院青协办公室部长。本人有很强的产品规划、需求分析、交互设计能力，能独立承担 App项目的管控工作。曾自学photoshop与Flash二维动画制作，善于学习，喜欢钻研。品质优良，吃苦耐劳。  
+  - Github爱好者，对互联网保持高度的敏感性和兴趣，曾任院青协办公室部长。本人有很强的产品规划、需求分析、交互设计能力，能独立承担 App项目的管控工作。曾自学photoshop与Flash二维动画制作，善于学习，喜欢钻研，品质优良，吃苦耐劳，利用业余时间研究安卓系统以及开源框架源码，提示自己的技术并应用到实际工作中。  
 
 
 #footer 脚注，打印版和web版不同不显示    
